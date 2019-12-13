@@ -22,7 +22,7 @@ MD_RE = re.compile(
 PY_LANGS = '(python|py|sage|python3|py3|numpy)'
 RST_RE = re.compile(
     rf'(?P<before>'
-    rf'^(?P<indent> *)\.\. (code|code-block|sourcecode|ipython):: {PY_LANGS}\n'
+    rf'^(?P<indent> *)\.\. (code|code-block|sourcecode|jupyter-execute|ipython):: {PY_LANGS}\n'
     rf'((?P=indent) +:.*\n)*'
     rf'\n*'
     rf')'
